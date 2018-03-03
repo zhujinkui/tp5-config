@@ -74,7 +74,7 @@ use think\ConfigApi;
 class Base extends Controller
 {
     public function _initialize()
-	  {
+    {
         //获取数据列表
         $config = ConfigApi::lists();
 
