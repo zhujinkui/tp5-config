@@ -10,7 +10,7 @@
 
 namespace think;
 
-class Config {
+class ConfigApi {
     /**
      * [lists 获取数据库中的配置列表]
      * @return array
