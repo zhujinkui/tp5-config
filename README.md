@@ -69,17 +69,14 @@ CREATE TABLE IF NOT EXISTS `think_config` (
 <?php
 namespace app\common\controller;
 use think\Controller;
-use think\Config;
+use think\ConfigApi;
 
 class Base extends Controller
 {
     public function _initialize()
-	{
-		//读取数据库中的配置
-		$configObj          = new \think\ConfigApi();
-		
-		//获取数据列表
-		$config             = $configObj->lists();
+    {
+        //获取数据列表
+        $config = ConfigApi::lists();
 
         Config::set($config);
     }
